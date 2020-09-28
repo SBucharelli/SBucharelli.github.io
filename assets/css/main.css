@@ -248,7 +248,19 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			.container {
-				width: 960px;
+				width: 100%;
+			}
+
+				.container.medium {
+					width: 720px;
+				}
+
+		}
+
+		@media screen and (max-width: 1131px) {
+
+			.container {
+				width: 90%;
 			}
 
 				.container.medium {
@@ -267,7 +279,7 @@ input, select, textarea {
 					width: 75%;
 				}
 
-		}
+		} 
 
 		@media screen and (max-width: 736px) {
 
@@ -1634,7 +1646,7 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			width: 100%;
+			width: 90%;
 		}
 
 		.image.featured {
