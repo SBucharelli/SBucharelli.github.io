@@ -1,209 +1,252 @@
-<!DOCTYPE HTML>
-<!--
-	Miniport by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Stephanie Bucharelli's Portfolio</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephanie Bucharelli - Frontend Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: white;
+            padding: 60px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .links a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .links a:hover {
+            text-decoration: underline;
+        }
+        
+        .section {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            font-size: 2em;
+            margin-bottom: 30px;
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        .project {
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .project:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .project h3 {
+            font-size: 1.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .project .tech {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+        
+        .project p {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        
+        .project ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        .project li {
+            margin-bottom: 8px;
+            line-height: 1.7;
+        }
+        
+        .project-links {
+            margin-top: 15px;
+        }
+        
+        .project-links a {
+            display: inline-block;
+            margin-right: 15px;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .project-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .note {
+            background: #f0f7ff;
+            padding: 10px 15px;
+            border-left: 4px solid #3498db;
+            margin-top: 15px;
+            font-size: 0.95em;
+            color: #555;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .section {
+                padding: 25px;
+            }
+            
+            h2 {
+                font-size: 1.6em;
+            }
+        }
+    </style>
 </head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Stephanie Bucharelli</h1>
+            <p class="subtitle">Frontend Engineer | React Native, React, TypeScript</p>
+            <div class="links">
+                <a href="https://github.com/sbucharelli" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/stephaniebucharelli" target="_blank">LinkedIn</a>
+                <a href="mailto:stephaniebucharelli@gmail.com">Email</a>
+                <a href="./Stephanie_Bucharelli_Resume.pdf" target="_blank">Resume</a>
+            </div>
+        </header>
 
-<body class="is-preload">
+        <div class="section">
+            <h2>About</h2>
+            <p>Frontend engineer with 5+ years of experience building scalable mobile and web applications. I specialize in React Native, React, and TypeScript, with a strong focus on component architecture, design systems, and performance optimization.</p>
+            <p>Most recently, I served as UX Engineer at IndeVets, where I architected a cross-platform design system and built complex mobile features for iOS, Android, and web platforms.</p>
+        </div>
 
-	<!-- Nav -->
-	<nav id="nav">
-		<ul class="container">
-			<li><a href="#top">Top</a></li>
-			<li><a href="#work">Work</a></li>
-			<li><a href="#portfolio">Portfolio</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
-	</nav>
+        <div class="section">
+            <h2>Featured Projects</h2>
 
-	<!-- Home -->
-	<article id="top" class="wrapper style1">
-		<div class="container">
-			<div class="row">
-				<div class="col-4 col-5-large col-12-medium">
-					<span class="image fit"><img src="./assets/images/ProfilePic.jpg" alt="" /></span>
-				</div>
-				<div class="col-8 col-7-large col-12-medium">
-					<header>
-						<h1>Hello! </h1>
-						<h1>I'm <strong>Stephanie Bucharelli</strong>.</h1>
-					</header>
-					<p>
-						I'm a Senior Research Analyst for Audit Analytics by day and an aspiring coder by night. I love projects
-						and tasks that I can dive into and develop a passion around.
-						I find the most enjoyment when I can truly focus and dig deep into a subject. As a result of being quite
-						observant, I love identifying problems or problem areas on
-						a project and collaborating with others to work towards implementing a solution for the issue.
-					</p>
-					<a href="#work" class="button large scrolly">Learn about what I do</a>
-				</div>
-			</div>
-		</div>
-	</article>
+            <div class="project">
+                <h3>IndeVets Design System (IndeVets-CUI)</h3>
+                <p class="tech">React Native, React, TypeScript, styled-components, Rollup, GitHub Packages</p>
+                <p>Architected and built a cross-platform component library used by 6 engineers across multiple products at IndeVets.</p>
+                <ul>
+                    <li>30+ reusable components with design tokens and TypeScript interfaces</li>
+                    <li>Shared across React web and React Native mobile applications</li>
+                    <li>Bundled with Rollup and published to GitHub Packages for versioned distribution</li>
+                    <li>Established consistent component APIs and prop patterns for type-safe usage</li>
+                    <li>Migrated from Tamagui to styled-components, improving maintainability and performance</li>
+                </ul>
+                <div class="note">Code is proprietary to IndeVets</div>
+            </div>
 
-	<!-- Work -->
-	<article id="work" class="wrapper style2">
-		<div class="container">
-			<header>
-				<h2>Here's a little about me</h2>
-				<p></p>
-			</header>
-			<div class="row aln-center">
-				<div class="col-4 col-6-medium col-12-small">
-					<section class="box style1">
-						<span class="icon featured fa-comments"></span>
-						<h3>Collaboration</h3>
-						<p>I work within a team and collaborate daily in order to accomplish product goals and tasks.
-							I believe being open to helping others is key to the success of a team and organization.</p>
-					</section>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<section class="box style1">
-						<span class="icon solid featured fa-calendar"></span>
-						<h3>Organization</h3>
-						<p>I enjoy utilizing my work and personal calendars so that I can work efficiently while completing tasks on
-							schedule. As a researcher, I understand how valuable time can really be. </p>
-					</section>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<section class="box style1">
-						<span class="icon featured fa-thumbs-up"></span>
-						<h3>Satisfaction</h3>
-						<p>Whether a task is for internal or external clients, I strive my best to provide them with a timely and
-							satisfied experience. I take pride in helping those around me efficiently and accurately.</p>
-					</section>
-				</div>
-			</div>
-			<footer>
-				<p>On a personal note, I am a big fan of music of most genres. It is very common for conversations to spur
-					random songs with similar lyrics to pop into my head. I'll sometimes try and respond with a lyric to
-					said song, however, the reference isn't always recognized.
-					I also enjoy playing video games (and tabletop games when not in quarantine)!</p>
-				<a href="#portfolio" class="button large scrolly">Here is some of my recent work</a>
-			</footer>
-		</div>
-	</article>
+            <div class="project">
+                <h3>Availability Calendar System</h3>
+                <p class="tech">React Native, TypeScript, React Query, React Navigation</p>
+                <p>Built a complex scheduling feature for IndeVets' mobile application with role-based business logic and real-time state synchronization.</p>
+                <ul>
+                    <li>Three-state selection UI (preferred/blackout/neutral)</li>
+                    <li>Role-based blackout limits per pay period (full-time vs. part-time users)</li>
+                    <li>Real-time state synchronization across scheduling, shift shopping, and availability views using React Query</li>
+                    <li>Bottom sheet interface using React Native Action Sheet</li>
+                </ul>
+                <div class="note">Code is proprietary to IndeVets</div>
+            </div>
 
-	<!-- Portfolio -->
-	<article id="portfolio" class="wrapper style3">
-		<div class="container">
-			<header>
-				<h2>Here are some projects that I've been working on.</h2>
-				<p>I am always excited to learn and improve. Please let me know if you can provide additional insight!</p>
-			</header>
-			<div class="row">
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<h3><a href="https://github.com/SBucharelli/order-book/tree/answer" target="_blank">Order Book</a></h3>
-						<p>Utilized JavaScript and Node.js to create a function to reconcile an incoming cryptocurrecy order
-							provided a set of existing orders. This was a test-driven development project. Tests were provided ahead
-							of time, however, the code needed to pass all tests in order to be successful.</p>
-					</article>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<h3><a href="https://github.com/SBucharelli/week-13-app-from-scatch" target="_blank">Pregnancy Weekly Size
-								Tracking App</a>
-						</h3>
-						<h4><a href="http://pregnancyappclient-env.eba-e5tbyr3z.us-east-2.elasticbeanstalk.com/"
-								target="_blank">View the app
-								here!</a></h4>
-						<p>A personal project that I am excited for since I am currently pregnant. This project utilizes Express.js,
-							React.js, and MongoDB to calculate someone's Estimated Due Date and provide weekly food comparisons
-							regarding the size of the baby.</p>
-					</article>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<h3><a href="https://github.com/rock43053/Industry-Project-SADA" target="_blank">Tee Commerce Database</a>
-						</h3>
-						<p>This is a group project for a startup, Tee Commerce, that wanted a relational database created in order
-							to allow their clients to fully customize their products as desired. With the hope that at some point,
-							they could connect it to the Ecwid store fronts. This project utilized MySQL, Sequelize, Express.js, and
-							React.js.</p>
-					</article>
-				</div>
-			</div>
+            <div class="project">
+                <h3>Profile Edit Redesign</h3>
+                <p class="tech">React Native, TypeScript, React Hook Form, Zod, styled-components</p>
+                <p>Redesigned a multi-screen profile editing experience into a single, performant form.</p>
+                <ul>
+                    <li>Consolidated more than 10 separate edit screens into one unified form</li>
+                    <li>Implemented validation using Zod schema with React Hook Form</li>
+                    <li>Custom styled components for consistent UI patterns</li>
+                    <li>Reduced navigation complexity and improved user experience</li>
+                </ul>
+                <div class="note">Code is proprietary to IndeVets</div>
+            </div>
 
-			<!-- Contact -->
-			<footer>
-				<a href="#contact" class="button large scrolly">Get in touch with me</a>
-			</footer>
-		</div>
-	</article>
+            <div class="project">
+                <h3>Phasmophobia Evidence Tracker</h3>
+                <p class="tech">React, TypeScript</p>
+                <p>A companion app for the game Phasmophobia that helps players track evidence and identify ghost types using complex filtering logic.</p>
+                <ul>
+                    <li>Three-state filtering system (confirmed/ruled out/unknown)</li>
+                    <li>Real-time ghost type suggestions based on evidence</li>
+                    <li>Built with React and TypeScript</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/sbucharelli/phasmophobia-companion" target="_blank">View on GitHub →</a>
+                </div>
+            </div>
 
+        </div>
 
-	<article id="contact" class="wrapper style4">
-		<div class="container medium">
-			<header>
-				<h2>Have any questions or advice? Please let me know!</h2>
-				<p>I am always open to meeting new people and hearing their stories, especially since I'm new to the world of
-					web development.</p>
-			</header>
-			<div class="row">
-				<div class="col-12">
-					<form method="post" action="MAILTO:stephaniebucharelli@gmail.com" enctype="text/plain">
-						<div class="row">
-							<div class="col-6 col-12-small">
-								<input type="text" name="name" id="name" placeholder="Name" />
-							</div>
-							<div class="col-6 col-12-small">
-								<input type="text" name="email" id="email" placeholder="Email" />
-							</div>
-							<div class="col-12">
-								<input type="text" name="subject" id="subject" placeholder="Subject" />
-							</div>
-							<div class="col-12">
-								<textarea name="message" id="message" placeholder="Message"></textarea>
-							</div>
-							<div class="col-12">
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-									<li><input type="reset" value="Clear Form" class="alt" /></li>
-								</ul>
-							</div>
-						</div>
-					</form>
-				</div>
-				<div class="col-12">
-					<hr />
-					<h3>Find me on ...</h3>
-					<ul class="social">
-						<li><a href="https://www.linkedin.com/in/stephaniebucharelli/" class="icon brands fa-linkedin-in">
-								<span class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/SBucharelli" class="icon brands fa-github">
-								<span class="label">Github</span></a></li>
-					</ul>
-					<hr />
-				</div>
-			</div>
-			<footer>
-				<ul id="copyright">
-					<li>&copy; Stephanie Bucharelli. All rights reserved.</li>
-					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</footer>
-		</div>
-	</article>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
+        <div class="section">
+            <h2>Experience</h2>
+            <p><strong>UX Engineer</strong> at IndeVets (March 2024 – October 2025)</p>
+            <p style="margin-bottom: 20px;">Led frontend development for mobile and web platforms, architected design systems, and built complex user-facing features.</p>
+            
+            <p><strong>Associate Full Stack Developer</strong> at IndeVets (November 2022 – March 2024)</p>
+            <p style="margin-bottom: 20px;">Built 50+ production components in React Native and TypeScript. Promoted to UX Engineer after 16 months.</p>
+            
+            <p><strong>Software Developer</strong> at Audit Analytics (December 2020 – November 2022)</p>
+            <p>Full-stack development with PHP, SQL, jQuery, HTML, and CSS.</p>
+        </div>
+    </div>
 </body>
-
 </html>
