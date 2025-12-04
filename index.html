@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,66 +11,67 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
             line-height: 1.6;
             color: #333;
             background: #f8f9fa;
         }
-        
+
         .container {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
-        
+
         header {
             background: white;
-            padding: 60px 20px;
+            padding: 60px 40px;
             text-align: center;
             margin-bottom: 40px;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
-        
+
         h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
             color: #2c3e50;
         }
-        
+
         .subtitle {
             font-size: 1.2em;
             color: #666;
             margin-bottom: 20px;
         }
-        
+
         .links {
             display: flex;
             gap: 20px;
             justify-content: center;
             flex-wrap: wrap;
         }
-        
+
         .links a {
             color: #3498db;
             text-decoration: none;
             font-weight: 500;
+            font-size: 1.1em;
         }
-        
+
         .links a:hover {
             text-decoration: underline;
         }
-        
+
         .section {
             background: white;
-            padding: 40px;
+            padding: 50px 40px;
             margin-bottom: 30px;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
-        
+
         h2 {
             font-size: 2em;
             margin-bottom: 30px;
@@ -77,160 +79,313 @@
             border-bottom: 3px solid #3498db;
             padding-bottom: 10px;
         }
-        
-        .project {
-            margin-bottom: 40px;
-            padding-bottom: 40px;
-            border-bottom: 1px solid #eee;
+
+        .about p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            color: #555;
         }
-        
+
+        .project {
+            margin-bottom: 60px;
+            padding-bottom: 50px;
+            border-bottom: 2px solid #eee;
+        }
+
         .project:last-child {
             border-bottom: none;
             margin-bottom: 0;
             padding-bottom: 0;
         }
-        
+
         .project h3 {
-            font-size: 1.5em;
+            font-size: 1.8em;
             color: #2c3e50;
             margin-bottom: 10px;
         }
-        
+
         .project .tech {
             color: #666;
-            font-size: 0.9em;
-            margin-bottom: 15px;
+            font-size: 1em;
+            margin-bottom: 20px;
             font-style: italic;
         }
-        
-        .project p {
+
+        .project-description {
+            font-size: 1.05em;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .project ul {
+            margin: 20px 0 20px 20px;
+        }
+
+        .project li {
             margin-bottom: 10px;
             line-height: 1.7;
+            font-size: 1.05em;
         }
-        
-        .project ul {
-            margin-left: 20px;
-            margin-top: 10px;
+
+        .screenshots {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
         }
-        
-        .project li {
-            margin-bottom: 8px;
-            line-height: 1.7;
+
+        .screenshots img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.2s;
         }
-        
+
+        .screenshots img:hover {
+            transform: scale(1.02);
+        }
+
         .project-links {
-            margin-top: 15px;
+            margin-top: 20px;
         }
-        
+
         .project-links a {
             display: inline-block;
-            margin-right: 15px;
+            margin-right: 20px;
             color: #3498db;
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
+            font-size: 1.05em;
         }
-        
+
         .project-links a:hover {
             text-decoration: underline;
         }
-        
+
         .note {
             background: #f0f7ff;
-            padding: 10px 15px;
+            padding: 15px 20px;
             border-left: 4px solid #3498db;
-            margin-top: 15px;
+            margin-top: 20px;
             font-size: 0.95em;
             color: #555;
+            font-style: italic;
         }
-        
+
+        .coming-soon {
+            background: #fff9e6;
+            padding: 15px 20px;
+            border-left: 4px solid #f39c12;
+            margin-top: 20px;
+            font-size: 0.95em;
+            color: #666;
+        }
+
         @media (max-width: 768px) {
             h1 {
                 font-size: 2em;
             }
-            
+
             .section {
-                padding: 25px;
+                padding: 30px 25px;
             }
-            
+
             h2 {
                 font-size: 1.6em;
+            }
+
+            .screenshots {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header>
             <h1>Stephanie Bucharelli</h1>
-            <p class="subtitle">Frontend Engineer | React Native, React, TypeScript</p>
+            <p class="subtitle">Frontend Engineer | React, React Native, TypeScript</p>
             <div class="links">
-                <a href="https://github.com/sbucharelli" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/stephaniebucharelli" target="_blank">LinkedIn</a>
-                <a href="mailto:stephaniebucharelli@gmail.com">Email</a>
-                <a href="./Stephanie_Bucharelli_Resume.pdf" target="_blank">Resume</a>
+                <a href="https://github.com/sbucharelli" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/stephaniebucharelli" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
             </div>
+            <p style="color: #666; font-size: 1em; margin-top: 12px;">stephaniebucharelli@gmail.com</p>
         </header>
 
-        <div class="section">
+        <div class="section about">
             <h2>About</h2>
-            <p>Frontend engineer with 5+ years of experience building scalable mobile and web applications. I specialize in React Native, React, and TypeScript, with a strong focus on component architecture, design systems, and performance optimization.</p>
-            <p>Most recently, I served as UX Engineer at IndeVets, where I architected a cross-platform design system and built complex mobile features for iOS, Android, and web platforms.</p>
+            <p>
+                I'm a frontend/UX engineer who enjoys building interfaces that feel clear, intuitive, and genuinely
+                helpful. I work
+                mostly with React, React Native, and TypeScript across iOS, Android, and web, and I care a lot about
+                creating
+                consistent patterns and small touches that make an experience feel polished.
+            </p>
+
+            <p>
+                Most recently, I worked as the UX Engineer on the IndeVets mobile team. I naturally fell into that
+                “in-between”
+                space — refining design details, asking clarifying questions, filling in gaps, and making sure our
+                interaction
+                patterns were both usable and realistic to implement. I also architected our cross-platform component
+                library,
+                which helped the mobile and web teams stay aligned as the product grew.
+            </p>
+
+            <p>
+                Although I was primarily embedded on the mobile team, I also partnered closely with the staffing team. I
+                built
+                components for their project, reviewed designs, and worked through interaction details when they needed
+                support.
+                Contributing to both areas gave me a broader understanding of how the product fit together and helped
+                keep branding
+                and expectations aligned across teams.
+            </p>
+
+            <p>
+                One of my favorite parts of the role was being someone the team trusted. I loved when engineers told me
+                my
+                components felt “plug and play,” or when someone asked me to join a feature review because something
+                looked off
+                visually. I also really valued being in early conversations—helping keep the user’s needs front and
+                center and adding the small UX details that make the experience feel thoughtful rather than stressful.
+            </p>
+
+            <p>
+                Something I care deeply about is reducing cognitive load for the people who use the products I help
+                build. At
+                IndeVets, that meant thinking about the vets behind the screen — people already juggling long shifts,
+                medical
+                decisions, and emotional labor. I wanted the UI to feel calm, clear, and easy to navigate, not
+                overwhelming or
+                flashy. Good UX should meet people where they are, respect their time and mental energy, and make their
+                day a little
+                lighter.
+            </p>
         </div>
 
         <div class="section">
             <h2>Featured Projects</h2>
 
             <div class="project">
-                <h3>IndeVets Design System (IndeVets-CUI)</h3>
-                <p class="tech">React Native, React, TypeScript, styled-components, Rollup, GitHub Packages</p>
-                <p>Architected and built a cross-platform component library used by 6 engineers across multiple products at IndeVets.</p>
-                <ul>
-                    <li>30+ reusable components with design tokens and TypeScript interfaces</li>
-                    <li>Shared across React web and React Native mobile applications</li>
-                    <li>Bundled with Rollup and published to GitHub Packages for versioned distribution</li>
-                    <li>Established consistent component APIs and prop patterns for type-safe usage</li>
-                    <li>Migrated from Tamagui to styled-components, improving maintainability and performance</li>
-                </ul>
-                <div class="note">Code is proprietary to IndeVets</div>
-            </div>
+                <h3>IndeVets Mobile Application</h3>
+                <p class="tech">React Native, TypeScript, React Query, React Navigation, Reanimated, styled-components
+                </p>
 
-            <div class="project">
-                <h3>Availability Calendar System</h3>
-                <p class="tech">React Native, TypeScript, React Query, React Navigation</p>
-                <p>Built a complex scheduling feature for IndeVets' mobile application with role-based business logic and real-time state synchronization.</p>
-                <ul>
-                    <li>Three-state selection UI (preferred/blackout/neutral)</li>
-                    <li>Role-based blackout limits per pay period (full-time vs. part-time users)</li>
-                    <li>Real-time state synchronization across scheduling, shift shopping, and availability views using React Query</li>
-                    <li>Bottom sheet interface using React Native Action Sheet</li>
-                </ul>
-                <div class="note">Code is proprietary to IndeVets</div>
-            </div>
+                <p class="project-description">
+                    I joined IndeVets right as the mobile app was starting to take shape. A couple of months after I
+                    arrived, the
+                    project
+                    transitioned from a contract team to a small internal group of four of us. We were all building the
+                    app together,
+                    which meant I had the chance to work on many of the early components and patterns. Being there so
+                    early gave me a
+                    unique view of how everything evolved, and it shaped the way I approached UI clarity and consistency
+                    as the product
+                    grew.
+                </p>
 
-            <div class="project">
-                <h3>Profile Edit Redesign</h3>
-                <p class="tech">React Native, TypeScript, React Hook Form, Zod, styled-components</p>
-                <p>Redesigned a multi-screen profile editing experience into a single, performant form.</p>
+                <p>
+                    One of the things I appreciated most about working on the IndeVets app was designing for real
+                    people. Veterinarians
+                    carry a huge emotional and mental load in their day-to-day work, so I tried to make the parts of the
+                    app they used
+                    feel simple, gentle, and easy to process. Good UX should make someone’s day feel a little lighter,
+                    and that idea
+                    became a guiding principle for me.
+                </p>
+
+
                 <ul>
-                    <li>Consolidated more than 10 separate edit screens into one unified form</li>
-                    <li>Implemented validation using Zod schema with React Hook Form</li>
-                    <li>Custom styled components for consistent UI patterns</li>
-                    <li>Reduced navigation complexity and improved user experience</li>
+                    <li><strong>Built core parts of the app:</strong> Developed many foundational components and screens
+                        early on,
+                        which later became the base for new features. It was rewarding to see how those pieces grew and
+                        evolved over
+                        time.</li>
+
+                    <li><strong>Created the cross-platform UI library:</strong> Designed and implemented IndeVets-CUI, a
+                        shared
+                        library with tokens, theming, and 30+ reusable components used across both mobile and web. This
+                        made building
+                        new UI faster and more consistent for the whole team.</li>
+
+                    <li><strong>Supported design handoff and clarity:</strong> Reviewed Figma files, asked clarifying
+                        questions,
+                        caught inconsistencies, and suggested small interaction improvements when something felt unclear
+                        or incomplete.
+                    </li>
+
+                    <li><strong>Availability Calendar:</strong> Built a complex scheduling interface with three-state
+                        day selection,
+                        pay-period logic, blackout rules, and real-time syncing through React Query. It was one of the
+                        most
+                        challenging and interesting features I worked on.</li>
+
+                    <li><strong>Shift browsing & booking:</strong> Implemented workflows for exploring shifts,
+                        filtering, viewing
+                        details, favoriting, and booking — including UI support for pay-rate calculations.</li>
+
+                    <li><strong>Focus on UX quality:</strong> Even when I wasn’t making final design choices, I
+                        continuously looked for
+                        opportunities to improve spacing, accessibility, behavior, and consistency. Those small details
+                        add up.</li>
                 </ul>
-                <div class="note">Code is proprietary to IndeVets</div>
+
+
+                <div class="screenshots">
+                    <img src="./assets/images/indevets-homepage.png" alt="IndeVets app homepage">
+                    <img src="./assets/images/indevets-confirm-clock-in.png" alt="IndeVets clock in flow">
+                    <img src="./assets/images/indevets-clock-out.png" alt="IndeVets clock out flow">
+                    <img src="./assets/images/indevets-shifts.png" alt="IndeVets shifts shopping page">
+                    <img src="./assets/images/indevets-shift-detail.png" alt="IndeVets shift details page">
+                    <img src="./assets/images/indevets-flex-shift.png"
+                        alt="IndeVets take shift bottom sheet for a flex shift">
+                    <img src="./assets/images/indevets-community.png" alt="IndeVets community message boards">
+                </div>
+
+                <div class="project-links">
+                    <a href="https://apps.apple.com/us/app/indevets/id1670489532" target="_blank"
+                        rel="noopener noreferrer">View on App
+                        Store →</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.indevets.mobile&hl=en_US" target="_blank"
+                        rel="noopener noreferrer">View on Google Play →</a>
+
+                </div>
+
+                <div class="note">
+                    Work created during my time at IndeVets. Screenshots are from the publicly available version of the
+                    application.
+                </div>
             </div>
 
             <div class="project">
                 <h3>Phasmophobia Evidence Tracker</h3>
-                <p class="tech">React, TypeScript</p>
-                <p>A companion app for the game Phasmophobia that helps players track evidence and identify ghost types using complex filtering logic.</p>
+                <p class="tech">React, TypeScript, Figma-to-Code</p>
+
+                <p class="project-description">
+                    A small side project I’m building for fun — a web tool that helps Phasmophobia players narrow down
+                    ghost types
+                    by
+                    tracking evidence. I designed the UI in Figma and rebuilt it in React with simple, clean components.
+                    It’s been a
+                    great
+                    way to explore interaction patterns outside of work.
+                </p>
+
                 <ul>
-                    <li>Three-state filtering system (confirmed/ruled out/unknown)</li>
-                    <li>Real-time ghost type suggestions based on evidence</li>
-                    <li>Built with React and TypeScript</li>
+                    <li>Three-state toggle system for evidence (confirmed / ruled out / unknown)</li>
+                    <li>Real-time filtering of ghost types using AND-based matching logic</li>
+                    <li>Responsive layout that works on desktop and mobile</li>
+                    <li>Reusable components with clear, predictable state handling</li>
                 </ul>
-                <div class="project-links">
-                    <a href="https://github.com/sbucharelli/phasmophobia-companion" target="_blank">View on GitHub →</a>
+
+                <div class="coming-soon">
+                    🚧 Currently in development — Live demo coming soon
                 </div>
             </div>
 
@@ -238,15 +393,67 @@
 
         <div class="section">
             <h2>Experience</h2>
-            <p><strong>UX Engineer</strong> at IndeVets (March 2024 – October 2025)</p>
-            <p style="margin-bottom: 20px;">Led frontend development for mobile and web platforms, architected design systems, and built complex user-facing features.</p>
-            
-            <p><strong>Associate Full Stack Developer</strong> at IndeVets (November 2022 – March 2024)</p>
-            <p style="margin-bottom: 20px;">Built 50+ production components in React Native and TypeScript. Promoted to UX Engineer after 16 months.</p>
-            
-            <p><strong>Software Developer</strong> at Audit Analytics (December 2020 – November 2022)</p>
-            <p>Full-stack development with PHP, SQL, jQuery, HTML, and CSS.</p>
+            <div style="margin-bottom: 30px;">
+                <h3 style="color: #2c3e50; margin-bottom: 5px;">UX Engineer</h3>
+                <p style="color: #666; margin-bottom: 10px;"><strong>IndeVets</strong> | March 2024 – October 2025</p>
+
+                <p class="project-description">
+                    As the UX Engineer on the mobile team, I worked closely with design, product, team leads, backend
+                    engineers,
+                    and other frontend engineers to shape how new features should look and feel.
+                    I refined patterns,
+                    asked
+                    clarifying questions, and contributed interaction details when designs were incomplete or needed
+                    adjustments.
+                    I also partnered with the staffing team — building components for their project and assisting with
+                    design
+                    reviews — which helped keep UI patterns and expectations aligned across product areas. I frequently
+                    acted as a
+                    UI/UX sounding board for other frontend engineers, joining quick calls to walk through features,
+                    review
+                    visuals, and suggest refinements so things felt cohesive across projects. My focus throughout was
+                    keeping the
+                    experience clear, consistent, and usable as the product expanded.
+                </p>
+            </div>
+
+
+            <div style="margin-bottom: 30px;">
+                <h3 style="color: #2c3e50; margin-bottom: 5px;">Associate Full Stack Developer</h3>
+                <p style="color: #666; margin-bottom: 10px;"><strong>IndeVets</strong> | November 2022 – March 2024</p>
+                <p style="line-height: 1.7;">
+                    Worked across early versions of the mobile app, building numerous production components and
+                    contributing
+                    to features
+                    across iOS, Android, and web. Collaborated with designers and backend engineers to ship
+                    functionality and
+                    establish UI patterns that the team continued using as the product grew. Promoted to UX Engineer
+                    after demonstrating
+                    strengths in frontend craft and design-engineering collaboration.
+                </p>
+
+
+            </div>
+
+            <div>
+                <h3 style="color: #2c3e50; margin-bottom: 5px;">Software Developer</h3>
+                <p style="color: #666; margin-bottom: 10px;"><strong>Audit Analytics</strong> | December 2020 – November
+                    2022</p>
+                <p style="line-height: 1.7;">
+                    Full-stack development using PHP, SQL, jQuery, HTML, and CSS. I worked on a variety of product
+                    features, data tools,
+                    and internal systems, improving legacy codebases and solving customer-reported issues. I also helped
+                    implement
+                    security
+                    fixes and quality-of-life improvements across different parts of the platform. It was my first
+                    experience working
+                    within
+                    a larger engineering group and collaborating across multiple teams to ship stable, production-ready
+                    software.
+                </p>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
