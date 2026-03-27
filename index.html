@@ -148,6 +148,15 @@
             transform: scale(1.02);
         }
 
+        .screenshots.single {
+            grid-template-columns: 1fr;
+            /* justify-items: center; */
+        }
+
+        .screenshots.single img {
+            max-width: 800px;
+        }
+
         .project-links {
             margin-top: 20px;
         }
@@ -411,12 +420,20 @@
                 <ul>
                     <li>Three-state toggle system for evidence (confirmed / ruled out / unknown)</li>
                     <li>Real-time filtering of ghost types using AND-based matching logic</li>
-                    <li>Responsive layout that works on desktop and mobile</li>
+                    <li>Designed for desktop with early responsive support</li>
                     <li>Reusable components with clear, predictable state handling</li>
+                    <li>Deployed via GitHub Pages with automated CI/CD</li>
                 </ul>
 
-                <div class="coming-soon">
-                    🚧 Currently in development — Live demo coming soon
+                <div class="screenshots single">
+                    <img src="./assets/images/phasmo-screenshot-cropped.png"
+                        alt="Initial cropped screenshot for Phasmophobia Tracker">
+                </div>
+
+                <div class="project-links">
+                    <a href="https://sbucharelli.github.io/phasmophobia-tracker/" target="_blank"
+                        rel="noopener noreferrer">Try it here →</a>
+
                 </div>
             </div>
 
